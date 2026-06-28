@@ -4,6 +4,7 @@ from src.us_accidents_etl.config.settings import get_settings
 from src.us_accidents_etl.pipeline import run
 from src.us_accidents_etl.spark.session import create_spark_session
 
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s %(name)s — %(message)s",

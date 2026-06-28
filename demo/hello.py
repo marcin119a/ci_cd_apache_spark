@@ -1,3 +1,10 @@
+import os
+import sys
+
+# Wskazanie ścieżki do Pythona z Twojego środowiska Anaconda
+os.environ['PYSPARK_PYTHON'] = sys.executable
+os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
+
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("QuickStart").getOrCreate()  
 # Create a DataFrame
